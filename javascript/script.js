@@ -22,38 +22,43 @@ function returnCarDetail (car) {
 const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
         if (obs) {
-            fetch('./cars-2.json').then(res => res.json()).then((json) => {
-                obs = false;
-                cars = [...cars, ...json]
-                nbrCars.innerHTML = cars.length
-                for (const [index, car] of json.entries()) {
-                    listing.innerHTML += `
-                    <article>
-                        <div class="car-carousel">
-                            <div id="carouselExample2Controls${index}" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    ${car.images.map((img, ix) => {
-                                        if (ix === 0) {
-                                            return `<div class='carousel-item active'><img src='${img}' class='d-block w-100' alt='véhicule ${ix+1} ${car.name}'></div>`
-                                        }
-                                        return `<div class='carousel-item'><img src='${img}' class='d-block w-100' alt='véhicule ${ix+1} ${car.name}'></div>`
-                                    }).join('')}
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2Controls${index}" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2Controls${index}" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                        ${returnCarDetail(car)}
-                    </article>
-                `
-                }
-            })
+            listing.innerHTML += "<div id='lds' class='lds-ripple'><div></div><div></div></div>";
+                fetch('./cars-2.json').then(res => res.json()).then((json) => {
+                    //On simule le chargement
+                    setTimeout(() => {
+                        obs = false;
+                        document.querySelector('#lds').remove();
+                        cars = [...cars, ...json]
+                        nbrCars.innerHTML = cars.length
+                        for (const [index, car] of json.entries()) {
+                            listing.innerHTML += `
+                                <article>
+                                    <div class="car-carousel">
+                                        <div id="carouselExample2Controls${index}" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                ${car.images.map((img, ix) => {
+                                                    if (ix === 0) {
+                                                        return `<div class='carousel-item active'><img src='${img}' class='d-block w-100' alt='véhicule ${ix+1} ${car.name}'></div>`
+                                                    }
+                                                    return `<div class='carousel-item'><img src='${img}' class='d-block w-100' alt='véhicule ${ix+1} ${car.name}'></div>`
+                                                }).join('')}
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2Controls${index}" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2Controls${index}" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    ${returnCarDetail(car)}
+                                </article>
+                        `
+                        }
+                    }, 5000)
+                })
         }
     }
 })
