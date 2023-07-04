@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Pagani",
+        "description": "Diesel, 3 portes, GPS, AutoRadio, Forfait 1000km (0,78/km supplémentaire),",
+        "price": 1500,
+        "Agence": "Agence de New York",
+        "images": ["https://cdn.motor1.com/images/mgl/jqmyy/s1/pagani-huayra-tricolore.webp", "https://www.turbo.fr/sites/default/files/2023-03/pagani-huayra-dinamica-evo.jpg", "https://cdn.motor1.com/images/mgl/WmAmL/s3/pagani-zonda-revolucion-getting-road-conversion.jpg"]
+    },
+    {
+        "name": "Ford Mustang",
+        "description": "Diesel, 5 portes, GPS, AutoRadio, Bluetooth, suspension, Forfait 4000km (0,5/km supplémentaire),",
+        "price": 4000,
+        "Agence": "Agence de Paris",
+        "images": ["https://cdn.motor1.com/images/mgl/Rq9nr3/s3/ford-mustang-dark-horse.jpg", "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-ford-mustang-shelby-gt500-02-1636734552.jpg?crop=0.845xw:1.00xh;0.0657xw,0&resize=640:*", "https://cdn.motor1.com/images/mgl/6ZpqJk/s3/ford-mustang-electric-by-charge-cars.jpg"]
+    },
+    {
+        "name": "BMW X6",
+        "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1400km (0,54/km supplémentaire),",
+        "price": 1100,
+        "Agence": "Agence de Paris",
+        "images": ["https://www.bmw.fr/content/dam/bmw/common/all-models/x-series/x6/2023/highlights/bmw-X-series-x6-ms-finance.jpg", "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x6-113-1675791922.jpg?crop=0.704xw:0.528xh;0.179xw,0.279xh&resize=1200:*", "https://imgd.aeplcdn.com/664x374/n/cw/ec/41375/x6-exterior-right-front-three-quarter.jpeg?q=75"]
+    },
+    {
+        "name": "Dacia Sandero",
+        "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire),",
+        "price": 600,
+        "Agence": "Agence de New York",
+        "images": ["https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/sandero/sandero-bji/sandero-bji-ph1/hero-zones/dacia-sandero-bji-ph1-hero-zone-001.jpg.ximg.small.jpg/ea2f8321b9.jpg", "https://www.automobile-magazine.fr/asset/cms/840x394/176416/config/125159/am-dacia-sandero-stepway-1.jpg"]
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Peugeot 208",
+        "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,575/km supplémentaire),",
+        "price": 999,
+        "Agence": "Agence de Paris",
+        "images": ["https://www.peugeot.fr/content/dam/peugeot/master/b2c/open/desk/208/colorvisu/208_Jaune_Faro_COLOR.jpg", "https://www.peugeot.fr/content/dam/peugeot/master/b2c/open/desk/208/colorvisu/208_Gris_Artense_COLOR.jpg", "https://www.peugeot.fr/content/dam/peugeot/master/b2c/open/desk/208/colorvisu/208_Gris_Platinium_COLOR.jpg"]
+    },
+    {
+        "name": "Tesla Model S",
+        "description": "Electrique, 5 portes, GPS, AutoRadio, Forfait 400km (3/km supplémentaire),",
+        "price": 1400,
+        "Agence": "Agence de New York",
+        "images": ["https://www.topgear.com/sites/default/files/images/cars-road-test/2019/10/63c2a3cbaf53acf3250b6025fa1ea567/ab3t4352_10.43.24.jpg", "https://hips.hearstapps.com/hmg-prod/images/tesla-model-s-1563301327.jpg", "https://www.automobile-propre.com/wp-content/uploads/2021/02/Tesla-Model-S-Audi-e-Tron-GT-03.jpeg", "https://www.moveelectric.com/sites/default/files/styles/article/public/2021-11/dsc_0265-1600x1067-b6e8014d-0dd2-4947-ab78-319201653550.jpg?itok=n2Pl8Pj-"]
+    },
+    {
+        "name": "Mercedes AMG",
+        "description": "Diesel, 3 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire),",
+        "price": 7000,
+        "Agence": "Agence de Paris",
+        "images": ["https://www.prixmotor.es/wp-content/uploads/2022/03/7K1A5572-scaled.jpg", "https://hips.hearstapps.com/hmg-prod/images/2019-mercedes-amg-g63-104-1549404384.jpg?crop=0.894xw:1.00xh;0.0545xw,0&resize=640:*", "https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_f2a7c1b7fe53ffff9f56cbfbfecf8b25.jpg"]
+    },
+    {
+        "name": "Buggati",
+        "description": "Diesel, 3 portes, GPS, AutoRadio, Forfait 10000km (0,5/km supplémentaire),",
+        "price": 10000,
+        "Agence": "Agence de Paris",
+        "images": ["https://www.bugatti.com/fileadmin/_processed_/f/c/csm_Stage-1920x1280_14e01f234d.png", "https://www.challenges.fr/assets/img/2018/08/24/cover-r4x3w1200-5b8069e0e7377-se-image-965e6da9dbe9f46c3e67943771a323b9-resultat-jpg.jpg"]
+    }
+]

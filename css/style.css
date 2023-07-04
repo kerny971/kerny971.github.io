@@ -1,0 +1,317 @@
+:root {
+    --green-1: rgba(70, 156, 70, 0.8);
+    --green-2: rgba(70, 156, 70, 1);
+}
+
+/*
+    Reset CSS
+*/
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+    Header CSS
+*/
+
+header {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    text-align: right;
+    position: relative;
+}
+
+nav > button {
+    background: none;
+    padding: .25em;
+    margin: .5em;
+    border: 1px solid;
+    color: rgba(255,255,255,.8);
+    border-radius: .25em;
+    width: 38px;
+    height: 38px;
+}
+nav > button > .material-symbols-outlined {
+    font-size: 1.4em;
+    transform: translateY(.1em);
+}
+
+.menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    background: #FFF;
+    z-index: 2;
+}
+.menu > li {
+    font-weight: 600;
+    display: block;
+}
+.menu > li > a {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+}
+
+.title-page {
+    margin-top: 1em;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.4em;
+    text-shadow: 1px 2px 8px #000;
+}
+
+.title-page > h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.location {
+    margin: 5em 0;
+    border-radius: .2em;
+    overflow: hidden;
+}
+
+.form-location {
+    display: block;
+}
+
+.button-submit-location {
+    width: 100%;
+    display: block;
+    padding: .5em;
+    border: none;
+    background-color: var(--green-1);
+    color: #FFF;
+}
+
+.data-location {
+    padding: .75em;
+    background-color: rgba(255,255,255,.4);
+}
+
+.data-location {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75em;
+}
+
+.data-location > * {
+    flex: 0 0 100%;
+    padding: .25em;
+    cursor: pointer;
+    border-radius: .2em;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 768px) {
+
+    .location {
+        margin: 14em 0 1em 0;
+    }
+
+    .data-location {
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .data-location > * {
+        flex: 0 0 32%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        background-position: center;
+    }
+
+    .menu > li > a {
+        padding: .5em;
+    }
+
+    .location {
+        margin: 20em 0 3em 0;
+    }
+
+    .form-location {
+        display: flex;
+    }
+
+    .data-location {
+        flex: 0 0 70%;
+    }
+}
+
+/*
+    Main CSS
+*/
+
+.option-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.nbr-result {
+    font-weight: 600;
+}
+
+.nbr-result > span {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.price-order-result > form > select {
+    padding: .5em;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: .2em;
+    font-size: .8em;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 4em 0;
+}
+article:nth-child(1) {
+    padding-top: 1em;
+}
+
+article > *:first-child {
+    flex: 0 0 60%;
+}
+
+article > *:last-child {
+    flex: 0 0 40%;
+}
+
+.carousel {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: .5em;
+}
+
+.carousel img {
+    object-fit: contain;
+}
+
+.carousel-control-next {
+    background: linear-gradient(270deg, rgba(0,0,0,.2) 0%, rgba(1,1,1,.2) 5%, transparent 100%);
+}
+.carousel-control-prev {
+    background: linear-gradient(90deg, rgba(0,0,0,.2) 0%, rgba(1,1,1,.2) 5%, transparent 100%);
+}
+
+.car-detail{
+    text-align: right;
+}
+.car-detail > h3,
+.car-detail > p {
+    display: none;
+}
+.car-detail > a {
+    background-color: var(--green-2);
+    color: #FFF;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: .25em;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: .9em;
+}
+
+.agency-presentation {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    text-align: center;
+}
+
+.agency-presentation > *{
+    flex: 0 0 100%;
+}
+
+.agency-presentation p {
+    margin: 0;
+}
+
+
+.agency-presentation img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .carousel {
+        height: 170px;
+    }
+
+    .agency-presentation {
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: left;
+    }
+
+    .agency-presentation > *:first-child {
+        text-align: right;
+        flex: 0 0 50%;
+    }
+
+    .agency-presentation > *:last-child {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .carousel {
+        height: 220px;
+    }
+
+    article {
+        align-items: normal;
+        gap: 5%;
+    }
+
+    .car-detail{
+        text-align: left;
+    }
+
+    article > *:first-child {
+        flex: 0 0 40%;
+    }
+    
+    article > *:last-child {
+        flex: 0 0 55%;
+    }
+
+    .car-detail > h3,
+    .car-detail > p {
+        display: block;
+    }
+
+    .car-detail > p {
+        font-size: .9em;
+    }
+}
